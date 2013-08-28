@@ -2,7 +2,9 @@
 
 This is a repository that contains my up-to-date CV in LaTeX.
 
-You can find the live versions of the CV on http://cv.raphink.info
+You can find the live versions of the CV on http://denewiler.us
+
+This repository was forked from https://github.com/raphink/CV.
 
 # How to build
 
@@ -29,9 +31,8 @@ The HTML version of this CV is generated from the PDF version, using [pdf2htmlex
 
 # About the `gh-pages` branch
 
-This project has a `gh-pages` branch hosting the http://cv.raphink.info.
+This project has a `gh-pages` branch hosting the http://denewiler.us
 
 The `gh-pages` branch contains a simple static HTML page and the HTML CV files generated from `pdf2htmlex`.
 
 The `index.html` page also allows to download the PDF CV files stored in the `master` branch.
-
