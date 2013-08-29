@@ -10,7 +10,7 @@
 
 \documentclass[11pt,a4paper,nolmodern]{moderncv}
 
-\usepackage{RaphaelPinson}
+\usepackage{ThomasDenewilerCV}
 
 \usepackage[english]{babel}
 \linespread{0.9}
@@ -20,24 +20,22 @@
    \setlength{\parskip}{0pt}}
    {\end{itemize}}
 
-
 % personal data
-\title{Open-Source Technologist}
+\title{Robotics Engineer}
 \extrainfo{%
-\linkedin~\httplink{www.linkedin.com/in/raphink}\\%
-\octocat~\httplink{www.github.com/raphink}\\%
-Driving License} % optional, remove the line if not wanted
+\linkedin~\httplink{www.linkedin.com/in/tdenewiler/}\\%
+\octocat~\httplink{github.com/tdenewiler}\\%
+} % optional, remove the line if not wanted
 
-\myquote{Freely you have received, freely give}{Matthew 10:8}
+\myquote{Prediction is very difficult, especially if it's about the future.}{Niels Bohr}
 
-
-%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%\nopagenumbers{} % uncomment to suppress automatic page numbering for CVs longer than one page
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-\setmainfont{Minion Pro}
-\setsansfont{Myriad Pro}
+%\setmainfont{Minion Pro}
+%\setsansfont{Myriad Pro}
 
 \hyphenpenalty=10000
 \maketitle
@@ -45,181 +43,105 @@ Driving License} % optional, remove the line if not wanted
 \section{Skills}
 
 \subsection{Expert Skills}
-\cvline{Debian and Ubuntu Systems}{Debian/Ubuntu Packages,
-  Creation and Administration of Package Repositories, \linebreak
-  Build Farms (Debian buildd/sbuild/pbuilder),
-  Automated Installations (Debian FAI)}
-\cvline{Configuration Management}{Puppet\contributor, MCollective\contributor, Augeas\developer}
+\cvline{Hardware}{Robotic Sensors (Perception, Localization)}
+\cvline{Algorithm Development}{Kalman Filters, Vehicle Control}
+\cvline{Systems Engineering}{***}
 
 \subsection{Development}
-\cvcomputer{Languages}{C, Perl, Python, Shell/Bash, Ruby, GNU Make, Ada, Lua}
-           {Web}{HTML/XHTML, CSS, JavaScript, Ajax, Jquery, PHP, Semantic Web}
-\cvcomputer{Frameworks}{Django, Google AppEngine, Google Wave, Netvibes}
-           {Databases}{MySQL, PostgreSQL, NoSQL (GQL), SPARQL}
-\cvcomputer{Formats}{XML/XPath, SGML, YAML/JSON, RDF/RSS/FOAF}
-           {Methods}{Object Oriented Programming, MVC, Unit Tests, UML}
-\cvcomputer{Source Management}{RCS/CVS, SVN, Bazaar, Git, Mercurial}
-           {Tools}{Autotools, Cmake, Doxygen, NaturalDocs, Trac,
-                   Gforge, Launchpad, GitHub}
-
-\subsection{Systems and Networks Administration}
-\cvcomputer{Web}{Apache, Lighttpd, Nginx, Varnish, Bind, Squid, Dansguardian, VsFTPd}
-           {Monitoring}{BB4/Hobbit, Nagios, Munin, Cacti,
-                        Simple Event Correlator (Sec)}
-\cvcomputer{Mail}{Postfix, Exim, SSMTP}
-           {Backup}{Amanda, BackupManager}
-\cvcomputer{Installation and Deployment}{FAI, Kickstart, Reprepro, Cfengine,
-                                         Puppet\contributor, MCollective\contributor, Augeas\developer}
-           {Networks}{DHCPd, VLANs, OpenVPN, Keepalived}
-\cvcomputer{Operating Systems}{GNU/Linux (Debian\contributor, Ubuntu\developer, RedHat),
-                               MacOS X, Windows, *BSD}
-           {Databases}{MySQL, PostgreSQL, SQLite, BerkeleyDB}
-\cvcomputer{Virtualization}{Xen, VMWare, OpenVZ, LXC, NX}
-           {Security}{SSL, PGP/GnuPG, OpenSSH}
+\cvcomputer{Languages}{C, C++, Python, Shell/Bash, GNU Make}
+           {Tools}{CMake, Doxygen, Trac, Confluence, Jira, Stash, GitHub, Jenkins}
+\cvcomputer{Source Management}{SVN, Git, Mercurial}
+           {Robotics Frameworks}{Robot Operating System\contributor, Autonomous Capabilities Suite\developer}
+\cvcomputer{Operating Systems}{GNU/Linux (Debian, Ubuntu, Mint), MacOS X, Windows}
 
 \subsection{Office and tools}
-\cvcomputer{Office}{OpenOffice/LibreOffice, Microsoft Office, Gimp,
-                    Inkscape}
-           {Project Management}{TaskJuggler, GanttProject}
-\cvcomputer{Productivity}{Mind Maps, GTD}
-           {Wikis}{MediaWiki, Trac, MoinMoin}
-\cvcomputer{Edition}{\TeX{}, \LaTeX{}, \XeTeX{}, \LuaTeX{}}
-           {Touch Typing}{QWERTY \& AZERTY}
+\cvcomputer{Office}{OpenOffice/LibreOffice, Microsoft Office, Gimp, Inkscape}
+           {Documentation}{\TeX, \LaTeX}
 
 \devnotes{Developer}{Contributor}
 
 \section{Experience}
-\subsection{IT Experience}
+\subsection{Robotics Experience}
 
 % Center labels and use "Since"
 %\tltextstart[base]{\scriptsize}
 %\tltextend[base]{\scriptsize}
 %\tlsince{Since~}
 
-\tlcventry{2012}{0}{Instrastructure Developer \& Trainer}{Chambéry}{}{\href{http://www.camptocamp.com}{Camptocamp}}%
-  {Infrastructure Developer
+\tlcventry{2013}{0}{Principal Investigator}{SPAWAR Pacific}{San Diego}{}{
+  ONR Code 30 Ground Autonomy Systems Integration
 \begin{itemize}
- \item Infrastructure Automation with Puppet;
- \item Setting up cloud-based redundant solutions;
- \item Speaking at devop conferences;
- \item Technical trainings (Puppet, Augeas);
- \item Technical presales consulting.
+  \item ***
 \end{itemize}}
 
-\tlcventry{2006}{2012}{Systems Engineer}{\href{http://www.orness.com}{ORNESS} then \href{http://www.alten.fr}{Alten}}{Sophia Antipolis}{}{Consultant at France T\'el\'ecom
+\tlcventry{2011}{2012}{Lead Engineer}{SPAWAR Pacific}{San Diego}{}{
+  Long Range Obstacle Detection
+\begin{itemize}
+  \item Outfitted Ford Escape Hybrid with large number of perception and localization sensors and computing.
+  \begin{tightitemize}
+    \item Perception: Velodyne lidar, Ibeo lidar, Delphi automotive radar, GigE stereo cameras, FLIR stereo cameras.
+    \item Localization: Novatel DGPS, DGPS serial radio, Microstrain IMU, GINA IMU, KVH gyro.
+    \item Computing: Installed rack, rackmount servers, and power distribution, created read-only Linux filesystem.
+  \end{tightitemize}
+  \item Ported autonomy algorithms from ACS to ROS.
+  \item Created URDF for system from SolidWorks 3D CAD models.
+  \item Implemented joystick teleoperation of vehicle.
+  \item Directed implementation of supervised learning algorithm for lidar calibration and object segmentation.
+\end{itemize}}
+
+\tlcventry{2009}{2011}{Systems Engineer}{SPAWAR Pacific}{San Diego}{}{
+  EOD Robotics Autonomy Developer
 \begin{tightitemize}
- \item Administration of Cfengine, FAI and the software package repository;
- \item Renewal and industrialization of the software deployment system for Debian/Ubuntu;
- \item Management of the Gforge (collaborative development web interface) platform;
- \item Development of QA tools for systems and configurations policy compliance;
- \item Integration of the continuous integration platform (Hudson) with the Debian/Ubuntu software deployment system;
- \item Monitoring of the fleet of servers;
- \item Writing of technical documentation.
+  \item Improved Kalman filter for localization using coordinate ascent machine learning.
+  \item Implemented control Lyapunov function-based control algorithm for waypoint navigation and showed significant improvement over PID controller.
+  \item Added use of CMake macros and functions to Autonomous Capabilities Suite build system to greatly simplify addition of new modules to architecture.
+  \item Installed Trac on main development server for management and developer use.
 \end{tightitemize}}
 
-\tlcventry{2008}{0}{Developer}{\href{http://www.augeas.net}{Augeas}}{Internet}{}{Development, bugfix and documentation
-\begin{tightitemize}%
- \item Writing of Augeas lenses;
- \item Coding in C;
- \item Improvement of autotools configuration;
- \item NaturalDocs Integration (documentation generator);
- \item International Conference Speaker (Belgium (\href{http://archive.fosdem.org/2009/schedule/events/fedora_augeas}{FOSDEM})).
+\tlcventry{2005}{2009}{Lead Engineer}{SAIC at SPAWAR Pacific}{}{}{
+  Autonomous UAV-UGV Refueling
+\begin{tightitemize}
+  \item ***
 \end{tightitemize}}
 
-\tlcventry{2005}{0}{\href{https://launchpad.net/~raphink}{Developer/Maintainer}}{\href{http://www.ubuntu.com}{Ubuntu}}{Internet}{}{Development, bugfix and documentation
-\begin{tightitemize}%
- \item Creation, maintainance and review of software packages; 
- \item Writing of technical documentation for developers;
- \item Maintainance of the QA system for software package;
- \item Bug management;
- \item International Conference Speaker (Hungary, Germany (\href{http://www.linuxtag.org/}{LinuxTag})).
+\tlcventry{2001}{2008}{Mechanical Engineer}{SAIC at SPAWAR Pacific}{}{}{
+  Mobile Detection, Assessment and Response System (Ground)
+\begin{tightitemize}
+  \item Managed wireless communications infrastructure for mobile robots.
+  \item Created tools to map wireless signal strength and GPS satellite observability.
+  \item Rapid prototyping of novel large UGV hardware (marsupial capability, UAV landing/refueling pad, automatic gate operation).
+  \item Supported large number of system test events at remote locations throughout U.S.
 \end{tightitemize}}
-
-
-\tlcventry{2005}{0}{Open-Source Contributor}{Various projects}{Internet}{}{
-\begin{tightitemize}%
- \item \href{https://launchpad.net/wavebiblebot}{Flammard Bible Bot}: Google Wave Bot, a personal project written in Python/AppEngine;
- \item \href{http://www.ichthux.com}{Ichthux}: Creation and maintainance of a specialized Linux distribution based on Ubuntu;
- \item \href{https://launchpad.net/byobu}{Byobu}: contribution of scripts and patches in Python and Bash;
- \item \href{http://search.cpan.org/~raphink}{CPAN Author}: maintainer of several Perl modules on CPAN;
- \item \href{http://www.ctan.org/author/id/pinson}{CTAN Author}: maintainer of several \LaTeX{} packages on CTAN.
-\end{tightitemize}}
-
 
 \subsection{Other Experience}
 
-\tlcventry{2009}{0}{Translator and Editor}{La Colombe Calvary}{Nice}{}{
+\tlcventry{2011}{0}{Engineering Mentor}{University of California}{San Diego}{}{
+  Computer Science Department, Prof. Ryan Kastner's Lab
 \begin{tightitemize}%
- \item Translation of English theology books into French;
- \item Edition of books using \LaTeX{}, \XeTeX{} and \LuaTeX{};
- \item Publishing of books using on-demand publishing services (CreateSpace and Lulu).
+ \item ***
 \end{tightitemize}}
 
 % Restore normal labels
 %\tltext{\scriptsize}
 
-\tldatelabelcventry{2004}{July 2004}{Blue Collar Internship}{\href{http://www.snecma.com}{SNECMA}}{Moissy-Cramayel}{}{Assembled and equilibrated turbo reactors for planes}
-
-%\tldatelabelcventry{2002}{Summer 2002}{Fire Safety Officer}{\href{http://www.euroguard.fr/}{Euroguard}}{Marcoussis}{}{Supervised an Alcatel research site}
-
-%\tldatelabelcventry{2001}{Summer 2001}{Surveillance Agent}{Penauille Polys\'ecurit\'e}{Paris}{}{Supervised the headquarters of the French Red Cross}
-
-\tllabelcventry{1999}{2000}{1999--2000}{Certified First Responder}{\href{http://www.croix-rouge.fr/}{French Red Cross}}{Paris Suburbs}{}{Served in several volunteer missions as a paramedic}
-
-
-\pagebreak
+%\pagebreak
 
 \section{Education}
 
-\tldatecventry{2013}{Puppet Trainer}{\href{https://puppetlabs.com/services/puppet-training/}{PuppetLabs}}{Amsterdam}{}{Official Training Partner for PuppetLabs' courses (Puppet Fundamentals, Puppet Advanced, Extending Puppet with Ruby)}
+\tllabelcventry{2009}{2011}{2009--2011}{Master's, Mechanical Engineering}{University of California}{San Diego}{}{Focus on Controls \& Estimation, Thesis: Improving Autonomous Navigation in EOD Robots, Class notes available on homepage}
 
-\tldatecventry{2009}{ITIL{\LARGE\textregistered} v3 Foundation}{\href{http://www.itil-officialsite.com/home/home.asp}{EXIN}}{Sophia Antipolis}{}{Organization and efficiency of the Information System}
+\tldatecventry{2004}{C/C++ Programming}{University of California Extension}{San Diego}{}{Introductory Course}
 
-\tldatecventry{2005}{Student in Business Creation and Management}{\href{http://www.creation-transmission.com/}{Cr\'eafort}}{Poitiers}{}{Accounting, Management, Marketing, Law}
-
-\tldatecventry{2005}{Student in Pedagogy (`Gestion Mentale')}{\href{http://www.ifgm.org/}{IFGM}}{Bordeaux}{}{Pedagogy, Didacticism, Cognitive Psychology}
-
-\tllabelcventry{2003}{2005}{2003--2005}{Student in Mechanical Engineering}{\newline\href{http://www.ensma.fr}{\'Ecole Nationale Sup\'erieure de M\'ecanique et d'A\'erotechnique (ENSMA)}}{Poitiers}{}{Solid \& Fluid Mechanics, Mathematics, Combusion \& Propulsion, Materials Science, Automation, Signal Processing, Computer Sciences, Management}
-
-\tldatecventry{2004}{Licence, equivalent of a British Bsc, in Mechanics}{\href{http://www.univ-poitiers.fr/}{Universit\'e de Poitiers}}{Poitiers}{}{Solid \& Fluid Mechanics, Mathematics, Combusion \& Propulsion, Materials Science, Automation, Signal Processing, Computer Sciences, Management}
-
-\tllabelcventry{2002}{2003}{2002--2003}{Student in Chemistry}{\href{http://www.u-psud.fr}{Universit\'e de Paris XI}}{Orsay}{}{Chemistry, Physics, Mathematics}
-
-\tllabelcventry{2000}{2002}{2000-2002}{Student in Medicine (PCEM1)}{\href{http://www.u-psud.fr}{Universit\'e de Paris XI}}{Orsay}{}{Biology, Chemistry, Biochemistry, Physics, Anatomy, Histology, Physiology, Law}
-
-\tldatecventry{2000}{Baccalaur\'eat, equivalent of British A Level}{\href{http://www.ac-versailles.fr/etabliss/orsay/}{Lyc\'ee Blaise Pascal}}{Orsay}{with distinction `mention bien'}{}
-
-
-
-\section{Certifications}
-
-\tldatecventry{2013}{Puppet Certified Developer}{\href{https://puppetlabs.com/services/certification/puppet-developer/}{PuppetLabs}}{PCD0000011}{}{Puppet IT automation software}
-
-\tldatecventry{2013}{Puppet Certified Professional}{\href{https://puppetlabs.com/services/certification/puppet-professional/}{PuppetLabs}}{PCP0000116}{}{Puppet IT automation software}
-
-\tldatecventry{2009}{ITIL{\LARGE\textregistered} v3 Foundation Examination}{\href{http://www.itil-officialsite.com/home/home.asp}{EXIN}}{00055512}{}{Organization and efficiency of the Information System}
-
-
-\section{Foreign Languages}
-\cvlanguage{French}{Native}{Mother Tongue}
-\cvlanguage{English}{Fluent}{Daily practice, conferences given in English}
-\cvlanguage{Spanish}{Good Level}{Occasional practice}
-\cvlanguage{German}{Good Level}{Studied 9 years in school}
-%\cvlanguage{Russian}{Intermediary Level}{Studied 3 years in school}
-%\cvlanguage{Dutch}{Beginner}{Studied alone}
-%\cvlanguage{Swedish}{Beginner}{Studied alone}
+\tllabelcventry{1996}{2000}{1996--2000}{Bachelor's, Mechanical Engineering}{University of California}{San Diego}{}{}
 
 \section{Personal interests}
 
-\cvhobby{Music}{Clarinet, piano, organ, saxophone}
-\cvhobby{Sports}{Hiking, sailing, golf, climbing}
-\cvhobby{Contributions}{Wikipedia, OpenStreetMap}
-\cvhobby{Memberships}{President of the cultural association `la Colombe de Savoie'}
-\cvhobby{}{Ubuntu member}
-\cvhobby{Others}{Travels, reading}
+\cvhobby{Sports}{Volleyball, Basketball, Hiking, Swimming}
+\cvhobby{Contributions}{Robot Operating System, UCSD Lecture Notes}
+\cvhobby{Volunteer}{Mentor in Big Brothers, Big Sisters from 2005 -- 2009}
+\cvhobby{Others}{Traveling, Reading, Gardening}
 
 %\renewcommand{\listitemsymbol}{-} % change the symbol for lists
-
 
 % Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
 %\nocite{*}
@@ -236,4 +158,3 @@ Driving License} % optional, remove the line if not wanted
 %\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
 
 \end{document}
-

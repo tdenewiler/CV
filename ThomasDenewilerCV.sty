@@ -1,4 +1,4 @@
-\ProvidesPackage{RaphaelPinson}
+\ProvidesPackage{ThomasDenewiler}
 %\RequirePackage[pdftex]{hyperref}
 \RequirePackage{metalogo}
 
@@ -46,24 +46,22 @@
 \end{tikzpicture}}}
 
 % personal data
-\firstname{Rapha\"el}
-\familyname{Pinson}
-\address{2, rue Favre}{73000~Chambéry}
-\mobile{+33 (0) 673 524 413}
-\phone{+33 (0) 456 753 683}
+\firstname{Thomas}
+\familyname{Denewiler}
+%\address{3595 Chasewood Dr}{San Diego, CA 92111}
+%\mobile{}
+%\phone{}
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
-\email{rpinson@gmail.com}
-%\homepage{www.raphink.info}
+\email{tdenewiler@gmail.com}
+\homepage{denewiler.us}
 %\extrainfo{\octocat~\url{http://github.com/raphink}}
 \photo[64pt]{identity}
-
 
 \AtBeginDocument{\renewcommand{\labelitemi}{-- }}
 
 \usepackage[firstyear=1999,lastyear=2014]{moderntimeline}
 %\tlmaxdates{1999}{2012}
 \tlwidth{0.8ex}
-
 
 % Proper alignment
 \usepackage[originalcommands]{ragged2e}
@@ -81,14 +79,12 @@
     \ifx#6\else{\newline{}\begin{minipage}[t]{\linewidth}\small#6\end{minipage}}\fi
     }}%
 
-
 % Refine quote 
 \newcommand*{\myquote}[2]{%
    \quote{\itshape #1 \\ \scshape \footnotesize #2}}
 
 % Hobbies
 \newcommand*{\cvhobby}[2]{\cvline{#1}{\small #2}}
-
 
 % Developer/Contributor footnotes
 \usepackage[bottom,norule,symbol*]{footmisc}

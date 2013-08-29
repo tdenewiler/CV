@@ -6,8 +6,6 @@ pdf: ThomasDenewilerCV.pdf
 
 html: ThomasDenewilerCV.html
 
-englishcv: ThomasDenewilerCV.pdf
-
 %.pdf: %.tex
 	#lualatex -interaction=batchmode $<
 	#lualatex -interaction=batchmode $<
