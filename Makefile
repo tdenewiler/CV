@@ -1,6 +1,6 @@
 FTP_DIR=cv
 
-all: pdf html
+all: pdf html pdf html
 
 pdf: ThomasDenewilerCV.pdf
 
@@ -9,8 +9,9 @@ html: ThomasDenewilerCV.html
 %.pdf: %.tex
 	#lualatex -interaction=batchmode $<
 	#lualatex -interaction=batchmode $<
-	xelatex -interaction=batchmode $<
-	xelatex -interaction=batchmode $<
+	#xelatex -interaction=batchmode $<
+	#xelatex -interaction=batchmode $<
+	pdflatex $<
 
 %.html: %.pdf
 	pdf2htmlEX --zoom=2 $<
@@ -22,4 +23,3 @@ upload:
 clean:
 	rm -f *.aux *.log *.out
 	rm -f *.pdf
-
