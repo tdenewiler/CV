@@ -29,6 +29,22 @@ TO build the PDF CVs, type `make pdf`.
 The HTML version of this CV is generated from the PDF version, using [pdf2htmlex](https://github.com/coolwanglu/pdf2htmlEX). Once you have `pdf2htmlex` in your `PATH`, type `make html` to build the files.
 
 
+## Using cool octicons
+
+Issue solved at https://github.com/raphink/CV/issues/2, solution is to copy the following file:
+https://github.com/geniusgithub/github-android/raw/master/assets/octicons-regular-webfont.ttf
+
+to /usr/local/share/fonts. This will cause the LinkedIn and GitHub icons to show up properly.
+
+
+## Adding GitHub ribbon to html page
+
+To add a ribbon to your html page that says "Fork me on GitHub" see:
+https://github.com/blog/273-github-ribbons
+
+I have to copy the html code listed at that link into the compiled html file from this repository each time that I compile. I put it near the bottom of the file after the final </div> tag.
+
+
 # About the `gh-pages` branch
 
 This project has a `gh-pages` branch hosting the http://denewiler.us/cv
