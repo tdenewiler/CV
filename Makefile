@@ -9,9 +9,9 @@ html: cv.html
 %.pdf: %.tex
 	#lualatex -interaction=batchmode $<
 	#lualatex -interaction=batchmode $<
-	#xelatex -interaction=batchmode $<
-	#xelatex -interaction=batchmode $<
-	pdflatex $<
+	xelatex -interaction=batchmode $<
+	xelatex -interaction=batchmode $<
+	#pdflatex $<
 
 %.html: %.pdf
 	pdf2htmlEX --zoom=2 $<
