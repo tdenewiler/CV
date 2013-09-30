@@ -42,7 +42,7 @@ to /usr/local/share/fonts. This will cause the LinkedIn and GitHub icons to show
 To add a ribbon to your html page that says "Fork me on GitHub" see:
 https://github.com/blog/273-github-ribbons
 
-I have to copy the html code listed at that link into the compiled html file from this repository each time that I compile. I put it near the bottom of the file after the final \</div\> tag.
+I set the Makefile to automatically append the line I want to the end of the html file.
 
 
 # About the `gh-pages` branch
