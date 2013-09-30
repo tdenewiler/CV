@@ -43,12 +43,3 @@ To add a ribbon to your html page that says "Fork me on GitHub" see:
 https://github.com/blog/273-github-ribbons
 
 I set the Makefile to automatically append the line I want to the end of the html file.
-
-
-# About the `gh-pages` branch
-
-This project has a `gh-pages` branch hosting the http://denewiler.us/cv
-
-The `gh-pages` branch contains a simple static HTML page and the HTML CV files generated from `pdf2htmlex`.
-
-The `index.html` page also allows to download the PDF CV files stored in the `master` branch.
