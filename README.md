@@ -12,7 +12,6 @@ This repository was forked from https://github.com/raphink/CV.
 
 To build all the versions (PDF and HTML), type `make`.
 
-
 ## PDF version
 
 In order to build the PDF versions of this CV, you will need:
@@ -21,8 +20,7 @@ In order to build the PDF versions of this CV, you will need:
    * LuaTeX;
    * MinionPro and MyriadPro fonts (you can find them with Acrobat Reader).
 
-TO build the PDF CVs, type `make pdf`.
-
+To build the PDF CVs, type `make pdf`.
 
 ## HTML version
 
