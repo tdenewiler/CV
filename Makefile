@@ -20,4 +20,4 @@ upload:
 
 clean:
 	rm -f *.aux *.log *.out
-	rm -f *.pdf *.html
+	rm -f *.pdf
