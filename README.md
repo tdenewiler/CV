@@ -22,18 +22,27 @@ In order to build the PDF versions of this CV, you will need:
 
 To build the PDF CVs, type `make pdf`.
 
+### Installing Adobe Acrobat Reader
+
+In Ubuntu 14.04 I had to follow
+[these instructions](http://askubuntu.com/questions/455135/how-do-i-install-adobe-acrobat-reader-from-the-repository)
+to install Adobe Acrobat Reader. Then I was able to find the Minion Pro and Myriad Pro fonts at
+`/opt/Adobe/Reader9/Resource/Font/`. After installation the command was
+
+    sudo cp /opt/Adobe/Reader9/Resource/Font/*.otf /usr/local/share/fonts/
+
 ## HTML version
 
-The HTML version of this CV is generated from the PDF version, using [pdf2htmlex](https://github.com/coolwanglu/pdf2htmlEX). Once you have `pdf2htmlex` in your `PATH`, type `make html` to build the files.
-
+The HTML version of this CV is generated from the PDF version, using
+[pdf2htmlex](https://github.com/coolwanglu/pdf2htmlEX). Once you have `pdf2htmlex` in your `PATH`, type `make html` to
+build the files.
 
 ## Using cool octicons
 
 Issue solved at https://github.com/raphink/CV/issues/2, solution is to copy the following file:
 https://github.com/geniusgithub/github-android/raw/master/assets/octicons-regular-webfont.ttf
 
-to /usr/local/share/fonts. This will cause the LinkedIn and GitHub icons to show up properly.
-
+to `/usr/local/share/fonts`. This will cause the LinkedIn and GitHub icons to show up properly.
 
 ## Adding GitHub ribbon to html page
 
