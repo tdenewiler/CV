@@ -1,6 +1,6 @@
 FTP_DIR=cv
 
-all: pdf html
+all: pdf html html
 
 pdf: cv.pdf
 

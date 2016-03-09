@@ -44,6 +44,9 @@ The HTML version of this CV is generated from the PDF version, using
 [pdf2htmlex](https://github.com/coolwanglu/pdf2htmlEX). Once you have `pdf2htmlex` in your `PATH`, type `make html` to
 build the files.
 
+The [pdf2htmlex #310](https://github.com/coolwanglu/pdf2htmlEX/issues/310) issue helped get this running on Ubuntu
+14.04.
+
 ## Using cool octicons
 
 Issue solved at https://github.com/raphink/CV/issues/2, solution is to copy the following file:
