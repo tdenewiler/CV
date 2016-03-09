@@ -57,11 +57,13 @@
 \extrainfo{\octocat~\url{http://github.com/tdenewiler}}
 \photo[64pt]{identity}
 
+
 \AtBeginDocument{\renewcommand{\labelitemi}{-- }}
 
 \usepackage[firstyear=1999,lastyear=2018]{moderntimeline}
 %\tlmaxdates{1999}{2012}
 \tlwidth{0.8ex}
+
 
 % Proper alignment
 \usepackage[originalcommands]{ragged2e}
@@ -79,12 +81,14 @@
     \ifx#6\else{\newline{}\begin{minipage}[t]{\linewidth}\small#6\end{minipage}}\fi
     }}%
 
+
 % Refine quote 
 \newcommand*{\myquote}[2]{%
    \quote{\itshape #1 \\ \scshape \footnotesize #2}}
 
 % Hobbies
 \newcommand*{\cvhobby}[2]{\cvline{#1}{\small #2}}
+
 
 % Developer/Contributor footnotes
 \usepackage[bottom,norule,symbol*]{footmisc}
@@ -96,3 +100,4 @@
 
 \newcommand*{\developer}{\footnotemark[1]}
 \newcommand*{\contributor}{\footnotemark[2]}
+
