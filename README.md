@@ -31,6 +31,13 @@ to install Adobe Acrobat Reader. Then I was able to find the Minion Pro and Myri
 
     sudo cp /opt/Adobe/Reader9/Resource/Font/*.otf /usr/local/share/fonts/
 
+There were some build errors after this that were fixed by running
+
+    rm -rf ~/.texmf-*
+
+Many attempts were made to install the Minion Pro and Myriad Pro fonts so it is possible that error was unrelated to
+the steps listed here.
+
 ## HTML version
 
 The HTML version of this CV is generated from the PDF version, using

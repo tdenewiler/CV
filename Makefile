@@ -1,17 +1,14 @@
 FTP_DIR=cv
 
-all: pdf html pdf html
+all: pdf html
 
 pdf: cv.pdf
 
 html: cv.html
 
 %.pdf: %.tex
-	#lualatex -interaction=batchmode $<
-	#lualatex -interaction=batchmode $<
 	xelatex -interaction=batchmode $<
 	xelatex -interaction=batchmode $<
-	#pdflatex $<
 
 %.html: %.pdf
 	pdf2htmlEX --zoom=2 $<
