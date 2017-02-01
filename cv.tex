@@ -15,14 +15,16 @@
 \linespread{0.9}
 % for some reason, lines take up a lot of space in itemize in English...
 \newenvironment{tightitemize}
-   {\begin{itemize}
-   \setlength{\parskip}{0pt}}
-   {\end{itemize}}
+{
+  \begin{itemize}
+  \setlength{\parskip}{0pt}}
+  {\end{itemize}
+}
 
 % personal data
 \title{Robotics Engineer}
 \extrainfo{%
-\linkedin~\httplink{www.linkedin.com/in/tdenewiler}\\%
+%\linkedin~\httplink{www.linkedin.com/in/tdenewiler}\\%
 \octocat~\httplink{github.com/tdenewiler}\\%
 } % optional, remove the line if not wanted
 
@@ -33,8 +35,8 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-\setmainfont{Minion Pro}
-\setsansfont{Myriad Pro}
+%\setmainfont{Minion Pro}
+%\setsansfont{Myriad Pro}
 
 \hyphenpenalty=10000
 \maketitle
@@ -68,20 +70,20 @@
 %\tltextend[base]{\scriptsize}
 %\tlsince{Since~}
 
-\tlcventry{2013}{0}{Principal Investigator}{SPAWAR Pacific}{San Diego}{}{
+\tlcventry{2013}{0}{Principal Investigator}{SPAWAR Pacific}{San Diego}{}{%
   ONR Code 30 Ground Autonomy Systems Integration
 \begin{itemize}
-  \item Low-cost autonomy for large off-road ground vehicles with passive capabilities.
+  \item Low-cost autonomy for large off-road ground vehicles in congested and rugged terrain  with passive capabilities.
   \item Responsible for reviewing and merging proposed changes into baseline software configuration.
   \item Major contributor to develop Autonomy Architecture Reference Model.
   \item Using standard and newly developed test methods to characterize large autonomous ground vehicle performance.
-  \item Setup and manage continuous integration environment for program with greater than 50 developers from more than
-        10 distributed organizations and more than 100 git repositories.
+  \item Setup and manage continuous integration environment for program with >50 developers from >10 distributed
+        organizations and >100 git repositories.
   \item Set up automated builds (static analysis, unit tests, regression tests) with feedback of results using Jenkins
         and Atlassian Stash.
 \end{itemize}}
 
-\tlcventry{2011}{2012}{Lead Engineer}{SPAWAR Pacific}{San Diego}{}{
+\tlcventry{2011}{2012}{Lead Engineer}{SPAWAR Pacific}{San Diego}{}{%
   Long Range Obstacle Detection
 \begin{itemize}
   \item Outfitted Ford Escape Hybrid with large number of perception and localization sensors and computing.
@@ -90,13 +92,14 @@
     \item Localization: Novatel DGPS, DGPS serial radio, Microstrain IMU, GINA IMU, KVH gyro.
     \item Computing: Installed rack, rackmount servers, and power distribution, created read-only Linux filesystem.
   \end{tightitemize}
-  \item Ported autonomy algorithms from ACS to ROS.
+  \item Ported autonomy algorithms from ACS to ROS\@.
   \item Created URDF and visualization tools for system from SolidWorks 3D CAD models.
   \item Implemented joystick teleoperation of vehicle.
-  \item Directed implementation of unsupervised learning algorithm for lidar calibration and object segmentation.
+  \item Directed implementation of unsupervised learning algorithm for lidar calibration and mesh-based object
+        segmentation of lidar data.
 \end{itemize}}
 
-\tlcventry{2009}{2011}{Systems Engineer}{SPAWAR Pacific}{San Diego}{}{
+\tlcventry{2009}{2011}{Systems Engineer}{SPAWAR Pacific}{San Diego}{}{%
   EOD Robotics Autonomy Developer
 \begin{tightitemize}
   \item Improved Kalman filter for localization using coordinate ascent machine learning.
@@ -107,14 +110,14 @@
   \item Installed Trac on main development server for management and developer use.
 \end{tightitemize}}
 
-\tlcventry{2007}{2009}{Lead Engineer}{SAIC at SPAWAR Pacific}{}{}{
+\tlcventry{2007}{2009}{Lead Engineer}{SAIC at SPAWAR Pacific}{}{}{%
   Autonomous UAV-UGV Refueling
 \begin{tightitemize}
   \item Developed UAV landing pad for large UGV that centers and refuels UAV and allows UAV to continue operations.
-  \item Wrote JAUS interface to UAV to control flight via waypoints from OCU.
+  \item Wrote JAUS interface to UAV to control flight via waypoints from OCU\@.
 \end{tightitemize}}
 
-\tlcventry{2001}{2008}{Mechanical Engineer}{SAIC at SPAWAR Pacific}{}{}{
+\tlcventry{2001}{2008}{Mechanical Engineer}{SAIC at SPAWAR Pacific}{}{}{%
   Mobile Detection, Assessment and Response System (Ground)
 \begin{tightitemize}
   \item Managed wireless communications infrastructure for mobile robots.
@@ -126,24 +129,24 @@
 
 \subsection{Other Experience}
 
-\tlcventry{2011}{2015}{Engineering Mentor}{University of California}{San Diego}{}{
-  Computer Science Department, Prof. Ryan Kastner's Lab
+\tlcventry{2011}{2015}{Engineering Mentor}{University of California}{San Diego}{}{%
+  Computer Science Department, Prof.\ Ryan Kastner's Lab
 \begin{tightitemize}%
  \item Mentored student teams with undergraduate and graduate students in areas of visual odometry, SLAM, stereo
        vision, Kinect for skeleton and gesture tracking, Turtlebot navigation, and underwater vehicles.
  \item Provided guest lectures on large ground vehicle autonomy development emphasizing test and evaluation.
 \end{tightitemize}}
 
-\tlcventry{2008}{2011}{Software Lead}{University of California}{San Diego}{}{
+\tlcventry{2008}{2011}{Software Lead}{University of California}{San Diego}{}{%
   Stingray Underwater Vehicle
 \begin{tightitemize}%
  \item Wrote custom networking software for autonomous underwater vehicle to compete in AUVSI UUV student competition.
  \item Wrote computer vision algorithms to perceive underwater obstacle course environment.
  \item Wrote and tuned PID algorithms for UUV control system with six degrees of freedom motion.
- \item Ported initial algorithms to ROS.
+ \item Ported initial algorithms to ROS\@.
 \end{tightitemize}}
 
-\tlcventry{2006}{2007}{Consultant}{South Park Systems}{}{}{
+\tlcventry{2006}{2007}{Consultant}{South Park Systems}{}{}{%
   Robotics
 \begin{tightitemize}
   \item Provided Linux administration and C programming support for project working with Neurosciences Institute.
@@ -157,7 +160,7 @@
 
 \section{Education}
 
-\tlcventry{2009}{2011}{Master's, Mechanical Engineering}{University of California, San Diego}{}{}{
+\tlcventry{2009}{2011}{Master's, Mechanical Engineering}{University of California, San Diego}{}{}{%
 \begin{tightitemize}
   \item Focus on Controls \& Estimation
   \item Thesis: \textit{Improving Autonomous Navigation in EOD Robots}
@@ -172,7 +175,7 @@
 
 \cvhobby{Sports}{Volleyball, Basketball, Hiking, Swimming}
 \cvhobby{Contributions}{Robot Operating System, UCSD Lecture Notes (on GitHub)}
-\cvhobby{Volunteer}{Mentor in Big Brothers, Big Sisters from 2005 -- 2009}
+\cvhobby{Volunteer}{Mentor in Big Brothers, Big Sisters from 2005 --- 2009}
 \cvhobby{Others}{Traveling, Reading, Gardening}
 
 %\renewcommand{\listitemsymbol}{-} % change the symbol for lists
