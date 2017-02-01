@@ -13,27 +13,17 @@
 
 \usepackage[english]{babel}
 \linespread{0.9}
-% for some reason, lines take up a lot of space in itemize in English...
-\newenvironment{tightitemize}
-{
-  \begin{itemize}
-  \setlength{\parskip}{0pt}}
-  {\end{itemize}
-}
 
 % personal data
 \title{Robotics Engineer}
 \extrainfo{%
-%\linkedin~\httplink{www.linkedin.com/in/tdenewiler}\\%
 \octocat~\httplink{github.com/tdenewiler}\\%
 } % optional, remove the line if not wanted
 
 \myquote{Prediction is very difficult, especially if it's about the future.}{Niels Bohr}
 
 %\nopagenumbers{} % uncomment to suppress automatic page numbering for CVs longer than one page
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
+
 \begin{document}
 %\setmainfont{Minion Pro}
 %\setsansfont{Myriad Pro}
@@ -60,15 +50,8 @@
 \cvcomputer{Office}{OpenOffice/LibreOffice, Microsoft Office, Gimp, Inkscape, draw.io}
            {Documentation}{\TeX, \LaTeX, Markdown}
 
-%\devnotes{Developer}{Contributor}
-
 \section{Experience}
 \subsection{Robotics Experience}
-
-% Center labels and use "Since"
-%\tltextstart[base]{\scriptsize}
-%\tltextend[base]{\scriptsize}
-%\tlsince{Since~}
 
 \tlcventry{2013}{0}{Principal Investigator}{SPAWAR Pacific}{San Diego}{}{%
   ONR Code 30 Ground Autonomy Systems Integration
@@ -87,11 +70,11 @@
   Long Range Obstacle Detection
 \begin{itemize}
   \item Outfitted Ford Escape Hybrid with large number of perception and localization sensors and computing.
-  \begin{tightitemize}
+  \begin{itemize}
     \item Perception: Velodyne lidar, Ibeo lidar, Delphi automotive radar, GigE stereo cameras, FLIR stereo cameras.
     \item Localization: Novatel DGPS, DGPS serial radio, Microstrain IMU, GINA IMU, KVH gyro.
     \item Computing: Installed rack, rackmount servers, and power distribution, created read-only Linux filesystem.
-  \end{tightitemize}
+  \end{itemize}
   \item Ported autonomy algorithms from ACS to ROS\@.
   \item Created URDF and visualization tools for system from SolidWorks 3D CAD models.
   \item Implemented joystick teleoperation of vehicle.
@@ -101,71 +84,68 @@
 
 \tlcventry{2009}{2011}{Systems Engineer}{SPAWAR Pacific}{San Diego}{}{%
   EOD Robotics Autonomy Developer
-\begin{tightitemize}
+\begin{itemize}
   \item Improved Kalman filter for localization using coordinate ascent machine learning.
   \item Implemented control Lyapunov function-based control algorithm for waypoint navigation and showed significant
         improvement over PID controller.
   \item Added use of CMake macros and functions to Autonomous Capabilities Suite build system to greatly simplify
         addition of new modules to architecture.
   \item Installed Trac on main development server for management and developer use.
-\end{tightitemize}}
+\end{itemize}}
 
 \tlcventry{2007}{2009}{Lead Engineer}{SAIC at SPAWAR Pacific}{}{}{%
   Autonomous UAV-UGV Refueling
-\begin{tightitemize}
+\begin{itemize}
   \item Developed UAV landing pad for large UGV that centers and refuels UAV and allows UAV to continue operations.
   \item Wrote JAUS interface to UAV to control flight via waypoints from OCU\@.
-\end{tightitemize}}
+\end{itemize}}
 
 \tlcventry{2001}{2008}{Mechanical Engineer}{SAIC at SPAWAR Pacific}{}{}{%
   Mobile Detection, Assessment and Response System (Ground)
-\begin{tightitemize}
+\begin{itemize}
   \item Managed wireless communications infrastructure for mobile robots.
   \item Created tools to map wireless signal strength and GPS satellite observability.
   \item Rapid prototyping of novel large UGV hardware (marsupial capability, UAV landing/refueling pad, automatic
         gate operation).
   \item Supported large number of system test events at remote locations throughout U.S.
-\end{tightitemize}}
+\end{itemize}}
 
 \subsection{Other Experience}
 
 \tlcventry{2011}{2015}{Engineering Mentor}{University of California}{San Diego}{}{%
   Computer Science Department, Prof.\ Ryan Kastner's Lab
-\begin{tightitemize}%
+\begin{itemize}%
  \item Mentored student teams with undergraduate and graduate students in areas of visual odometry, SLAM, stereo
        vision, Kinect for skeleton and gesture tracking, Turtlebot navigation, and underwater vehicles.
  \item Provided guest lectures on large ground vehicle autonomy development emphasizing test and evaluation.
-\end{tightitemize}}
+\end{itemize}}
 
 \tlcventry{2008}{2011}{Software Lead}{University of California}{San Diego}{}{%
   Stingray Underwater Vehicle
-\begin{tightitemize}%
+\begin{itemize}%
  \item Wrote custom networking software for autonomous underwater vehicle to compete in AUVSI UUV student competition.
  \item Wrote computer vision algorithms to perceive underwater obstacle course environment.
  \item Wrote and tuned PID algorithms for UUV control system with six degrees of freedom motion.
  \item Ported initial algorithms to ROS\@.
-\end{tightitemize}}
+\end{itemize}}
 
 \tlcventry{2006}{2007}{Consultant}{South Park Systems}{}{}{%
   Robotics
-\begin{tightitemize}
+\begin{itemize}
   \item Provided Linux administration and C programming support for project working with Neurosciences Institute.
   \item Main work was getting robot simulator working with hardware-in-the-loop testing.
-\end{tightitemize}}
+\end{itemize}}
 
-% Restore normal labels
-%\tltext{\scriptsize}
-
-%\pagebreak
+\pagebreak
 
 \section{Education}
 
 \tlcventry{2009}{2011}{Master's, Mechanical Engineering}{University of California, San Diego}{}{}{%
-\begin{tightitemize}
+\begin{itemize}
   \item Focus on Controls \& Estimation
   \item Thesis: \textit{Improving Autonomous Navigation in EOD Robots}
   \item Course notes available on GitHub
-\end{tightitemize}}
+\end{itemize}}
 
 \tldatecventry{2004}{C/C++ Programming}{University of California Extension, San Diego}{}{}{Introductory Course}
 
@@ -177,22 +157,5 @@
 \cvhobby{Contributions}{Robot Operating System, UCSD Lecture Notes (on GitHub)}
 \cvhobby{Volunteer}{Mentor in Big Brothers, Big Sisters from 2005 --- 2009}
 \cvhobby{Others}{Traveling, Reading, Gardening}
-
-%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
-
-% Publications from a BibTeX file without
-% multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
-%\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{publications}       % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
 
 \end{document}
