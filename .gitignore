@@ -1,7 +1,10 @@
-*.swp
-*.swo
 *.aux
+*.code-workspace
+*.fdb_latexmk
+*.fls
+*.html
 *.log
 *.out
 *.pdf
-*.html
+*.swo
+*.swp
