@@ -34,33 +34,106 @@
 \section{Skills}
 
 \subsection{Expert Skills}
+\cvline{Systems Engineering}{Systems Integration, Development Models, Field Experiments}
 \cvline{Hardware}{Robotic Sensors (Perception, Localization)}
-\cvline{Algorithm Development}{Autonomous Systems Testing, Autonomy Architectures,  Sensor Fusion,
+\cvline{Algorithm Development}{Autonomous Vehicle Testing, Autonomy Architectures, Sensor Fusion,
         Kalman Filters, Vehicle Control}
-\cvline{Systems Engineering}{Development Models, Field Experiments}
 
 \subsection{Development}
 \cvcomputer{Languages}{C, C++, Python, Shell/Bash}
-           {Tools}{Docker, CMake, Doxygen, Atlassian, GitHub, GitLab, Jenkins, static analysis}
-\cvcomputer{Operating Systems}{GNU/Linux (Debian, Ubuntu, Mint), MacOS X, Windows}
-           {Robotics Frameworks}{Robot Operating System (ROS), Unmanned Maritime Autonomy Architecture (UMAA)}
+           {Tools}{Docker, Atlassian, GitHub, GitLab, Jenkins, static analysis}
+% \cvcomputer{Operating Systems}{GNU/Linux (Debian, Ubuntu, Mint), MacOS X, Windows}
+%            {Robotics Frameworks}{Robot Operating System (ROS), Unmanned Maritime Autonomy Architecture (UMAA)}
 
-\subsection{Office and Tools}
-\cvcomputer{Documents}{Markdown, \TeX, \LaTeX}
-           {Office}{Inkscape, draw.io, Gimp}
+% \subsection{Office and Tools}
+% \cvcomputer{Documents}{Markdown, \TeX, \LaTeX}
+%            {Office}{Inkscape, draw.io, Gimp}
 
 \section{Experience}
-\subsection{Robotics Experience}
+\subsection{NIWC Pacific}
 
-\tlcventry{2021}{0}{Senior Engineer}{NIWC Pacific}{San Diego}{}{%
-  Large Unmanned Surface Vehicle
+\tlcventry{2021}{0}{Engineering Manager, Autonomy Performance Analysis}{}{}{}{%
 \begin{itemize}
-  \item 150-300 foot vessels.
-  \item Smaller surrogate vessels.
-  \item Mission management development for long-duration missions with AI planning.
-  \item Create test methods to characterize system performance.
-        Focus on navigation capabilities.
+  \item Lead team of 9 to develop analysis architecture to provide timely
+        and actionable results to engineers and management.
+  \item Architecture based on hierarchy of capabilities organized by protocol.
+        Allows for inheritance of results and intuitive reporting.
+  \item Developed metrics to accurately describe capability performance.
+        Facilitates comparison of results across system evolution.
+  \item Integrate work with multiple organizations doing vehicle autonomy and analysis.
+        Distributed our products as Docker images and Python packages with well-defined and
+        documented interfaces.
+  \item Documentation and software artifacts automatically generated during
+        continuous integration.
 \end{itemize}}
+
+\tlcventry{2024}{2021}{Senior Engineer, Mission Management}{}{}{}{%
+\begin{itemize}
+  \item AI planning for long duration missions.
+  \item Develop translation modules between software frameworks (ROS 2 and UMAA) to enable use
+        of open source software.
+        Unit and integration tests written for translation and algorithm execution.
+\end{itemize}}
+
+\tlcventry{2024}{2021}{Senior Engineer, Division Technical Development Lead}{}{}{}{%
+\begin{itemize}
+  \item Software Technical Development Lead for Autonomous Technologies Division
+        (>500 employees, >100 software developers).
+  \item Created Software Community of Interest.
+        In coordination with Division project leads, developed example projects to highlight
+        and share best practices for software development.
+        Met with projects throughout the Division to help them tailor best practices for their workflow.
+\end{itemize}}
+
+\tlcventry{2020}{2013}{Engineering Manager, Autonomous Vehicle Development}{}{}{}{%
+\begin{itemize}
+  \item Vehicles: Assault Amphibious Vehicle, HMMWV, Ford Escape Hybrid, QuadSki
+  \item Domains: Off-road, unimproved roads, beaches, surf zone, open ocean, suburban
+  \item Low-cost autonomy for large vehicles in congested and rugged terrain with passive capabilities.
+  \item Setup and managed continuous integration environment for program with >50 developers from >10 distributed
+        organizations and >100 git repositories.
+        Used standard and newly developed test methods to characterize large autonomous vehicle performance.
+        Integrated high- and low-fidelity simulation with validated results for configured scenarios.
+        Developed architecture to support running on vehicle, in simulation, and with sensor playback.
+  \item Responsible for reviewing and merging proposed changes into baseline software configuration.
+        Documented and communicated clear pathway to integrate into and evolve baseline configuration.
+  \item Set up automated builds (static analysis, unit tests, regression tests).
+        Focused on rapid feedback for faster iterations:
+        build and test subsets of modules, configure dependencies for speed, faster-than-real-time simulation.
+  \item Developed RPM-based PID throttle controller with switching on pitch angle used in surf zone.
+        Contributor to AAV motion model development (trinary steering system) and validation.
+  \item Outfitted Ford Escape Hybrid with large number of perception and localization sensors and computing.
+  \item Directed implementation of unsupervised learning algorithm for lidar calibration and mesh-based object
+        segmentation of lidar data.
+\end{itemize}}
+
+\tlcventry{2011}{2009}{Systems Engineer, EOD Robotics}{}{}{}{%
+\begin{itemize}
+  \item Improved Kalman filter for localization using coordinate ascent machine learning.
+  \item Implemented control Lyapunov function-based algorithm for waypoint navigation and showed significant
+        improvement over PID controller.
+  \item Added use of CMake macros and functions to Autonomous Capabilities Suite build system to greatly simplify
+        addition of new modules to architecture.
+\end{itemize}}
+
+\tlcventry{2009}{2007}{Lead Engineer, UAV-UGV Refueling}{}{}{}{%
+\begin{itemize}
+  \item Developed UAV landing pad for large UGV that centers and refuels UAV and allows UAV to continue operations.
+  \item Wrote interface to UAV to control flight via waypoints from OCU\@.
+\end{itemize}}
+
+\tlcventry{2008}{2001}{Mechanical Engineer, Large Patrol UGV}{}{}{}{%
+\begin{itemize}
+  \item Managed wireless communications infrastructure for mobile robots.
+  \item Created tools to map wireless signal strength and GPS satellite observability.
+  \item Rapid prototyping of novel large UGV hardware (marsupial capability, UAV landing/refueling pad, automatic
+        gate operation).
+  \item Supported large number of system test events at remote locations throughout U.S.
+\end{itemize}}
+
+%\pagebreak
+
+\subsection{Other Experience}
 
 \tlcventry{2010}{0}{Developer/Maintainer}{}{}{}{%
   Open Source Projects
@@ -70,106 +143,29 @@
   \item \textit{ROS Example Node}: minimal working example of common ROS concepts and best practices.
 \end{itemize}}
 
-\tlcventry{2024}{2021}{Senior Engineer}{NIWC Pacific}{San Diego}{}{%
-  Software Technical Development Lead for Autonomous Technologies Division
-\begin{itemize}
-  \item Created Community of Interest for Division (>500 employees, >100 software developers).
-  \item Created example projects to highlight and share best practices for software development.
-  \item Met with projects throughout the Division to help them tailor best practices for their workflow.
-\end{itemize}}
-
-\tlcventry{2020}{2018}{Senior Engineer}{NIWC Pacific}{San Diego}{}{%
-  Autonomous Assault Amphibious Vehicle
-\begin{itemize}
-  \item Develop autonomy on 29 ton amphibious vehicle operating on shore and through surf zone.
-  \item Small team with everyone working on all systems.
-  \item RPM-based PID throttle controller with switching on pitch angle used in surf zone.
-\end{itemize}}
-
-\tlcventry{2017}{2013}{Principal Investigator}{SPAWAR Pacific}{San Diego}{}{%
-  ONR Code 30 Ground Autonomy Systems Integration
-\begin{itemize}
-  \item Low-cost autonomy for large off-road ground vehicles in congested and rugged terrain  with passive capabilities.
-  \item Responsible for reviewing and merging proposed changes into baseline software configuration.
-  \item Major contributor to develop Autonomy Architecture Reference Model.
-  \item Using standard and newly developed test methods to characterize large autonomous ground vehicle performance.
-  \item Setup and manage continuous integration environment for program with >50 developers from >10 distributed
-        organizations and >100 git repositories.
-  \item Set up automated builds (static analysis, unit tests, regression tests) with results feedback using Jenkins
-        and Atlassian Stash.
-\end{itemize}}
-
-\tlcventry{2012}{2011}{Lead Engineer}{SPAWAR Pacific}{San Diego}{}{%
-  Long Range Obstacle Detection
-\begin{itemize}
-  \item Outfitted Ford Escape Hybrid with large number of perception and localization sensors and computing.
-  \begin{itemize}
-    \item Perception: Velodyne lidar, Ibeo lidar, Delphi automotive radar, GigE stereo cameras, FLIR stereo cameras.
-    \item Localization: Novatel DGPS, DGPS serial radio, Microstrain IMU, GINA IMU, KVH gyro.
-    \item Computing: Installed rack, rackmount servers, and power distribution, created read-only Linux filesystem.
-  \end{itemize}
-  \item Ported autonomy algorithms from ACS to ROS\@.
-  \item Created URDF and visualization tools for system from SolidWorks 3D CAD models.
-  \item Implemented joystick teleoperation of vehicle.
-  \item Directed implementation of unsupervised learning algorithm for lidar calibration and mesh-based object
-        segmentation of lidar data.
-\end{itemize}}
-
-\tlcventry{2011}{2009}{Systems Engineer}{SPAWAR Pacific}{San Diego}{}{%
-  EOD Robotics Autonomy Developer
-\begin{itemize}
-  \item Improved Kalman filter for localization using coordinate ascent machine learning.
-  \item Implemented control Lyapunov function-based control algorithm for waypoint navigation and showed significant
-        improvement over PID controller.
-  \item Added use of CMake macros and functions to Autonomous Capabilities Suite build system to greatly simplify
-        addition of new modules to architecture.
-  \item Installed Trac on main development server for management and developer use.
-\end{itemize}}
-
-\tlcventry{2009}{2007}{Lead Engineer}{SAIC at SPAWAR Pacific}{}{}{%
-  Autonomous UAV-UGV Refueling
-\begin{itemize}
-  \item Developed UAV landing pad for large UGV that centers and refuels UAV and allows UAV to continue operations.
-  \item Wrote JAUS interface to UAV to control flight via waypoints from OCU\@.
-\end{itemize}}
-
-\tlcventry{2008}{2001}{Mechanical Engineer}{SAIC at SPAWAR Pacific}{}{}{%
-  Mobile Detection, Assessment and Response System (Ground)
-\begin{itemize}
-  \item Managed wireless communications infrastructure for mobile robots.
-  \item Created tools to map wireless signal strength and GPS satellite observability.
-  \item Rapid prototyping of novel large UGV hardware (marsupial capability, UAV landing/refueling pad, automatic
-        gate operation).
-  \item Supported large number of system test events at remote locations throughout U.S.
-\end{itemize}}
-
-\pagebreak
-
-\subsection{Other Experience}
-
 \tlcventry{2015}{2011}{Engineering Mentor}{University of California}{San Diego}{}{%
   Computer Science Department, Prof.\ Ryan Kastner's Lab
 \begin{itemize}%
- \item Mentored student teams with undergraduate and graduate students in areas of visual odometry, SLAM, stereo
-       vision, Kinect for skeleton and gesture tracking, Turtlebot navigation, and underwater vehicles.
- \item Provided guest lectures on large ground vehicle autonomy development emphasizing test and evaluation.
+  \item Mentored student teams with undergraduate and graduate students in areas of visual odometry, SLAM, stereo
+        vision, Kinect for skeleton and gesture tracking, Turtlebot navigation, and underwater vehicles.
+  \item Provided guest lectures on large ground vehicle autonomy development emphasizing test and evaluation.
 \end{itemize}}
 
 \tlcventry{2011}{2008}{Software Lead}{University of California}{San Diego}{}{%
   Stingray Underwater Vehicle
 \begin{itemize}%
- \item Wrote custom networking software for autonomous underwater vehicle to compete in AUVSI UUV student competition.
- \item Wrote computer vision algorithms to perceive underwater obstacle course environment.
- \item Wrote and tuned PID algorithms for UUV control system with six degrees of freedom motion.
- \item Ported initial algorithms to ROS\@.
+  \item Participated in AUVSI UUV student competition.
+  \item Developed: custom networking software, computer vision algorithms to perceive underwater obstacle course,
+        PID algorithms for UUV with six degrees of freedom motion.
 \end{itemize}}
 
-\tlcventry{2007}{2006}{Consultant}{South Park Systems}{}{}{%
-  Robotics
-\begin{itemize}
-  \item Provided Linux administration and C programming support for project working with Neurosciences Institute.
-  \item Main work was getting robot simulator working with hardware-in-the-loop testing.
-\end{itemize}}
+% \tlcventry{2007}{2006}{Consultant}{South Park Systems}{}{}{%
+% \begin{itemize}
+%   \item Provided Linux administration and C programming support for project working with Neurosciences Institute.
+%   \item Main work was getting robot simulator working with hardware-in-the-loop testing.
+% \end{itemize}}
+
+%\pagebreak
 
 \section{Education}
 
@@ -187,7 +183,6 @@
 \section{Personal interests}
 
 \cvhobby{Sports}{Volleyball, Basketball, Hiking, Swimming, Paddle Boarding}
-\cvhobby{Contributions}{Statick, Robot Operating System, UCSD Lecture Notes (on GitHub)}
 \cvhobby{Volunteer}{Mentor in Big Brothers, Big Sisters from 2005 --- 2009}
 \cvhobby{Others}{Traveling, Reading, Gardening}
 

@@ -10,7 +10,7 @@
 %\usepackage[utf8]{inputenc}
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.9]{geometry}
 
 \usepackage{ifxetex,ifluatex}
 \newif\ifxetexorluatex
@@ -49,21 +49,19 @@
 \firstname{Thomas}
 \familyname{Denewiler}
 %\address{3595 Chasewood Dr}{San Diego, CA 92111}
-%\mobile{}
+\mobile{(619) 757-0932}
 %\phone{}
 %\fax{fax (optional)} % optional, remove the line if not wanted
 \email{tdenewiler@gmail.com}
-% \homepage{denewiler.us/cv}
+%\homepage{denewiler.us/cv}
 \extrainfo{\octocat~\url{https://github.com/tdenewiler}}
-\photo[64pt]{identity}
-
+%\photo[64pt]{identity}
 
 \AtBeginDocument{\renewcommand{\labelitemi}{-- }}
 
-\usepackage[firstyear=1999,lastyear=2025]{moderntimeline}
-%\tlmaxdates{1999}{2012}
+\usepackage[firstyear=1996,lastyear=2029]{moderntimeline}
+\tlmaxdates{1996}{2029}
 \tlwidth{0.8ex}
-
 
 % Proper alignment
 \usepackage[originalcommands]{ragged2e}
@@ -81,14 +79,12 @@
     \ifx#6\else{\newline{}\begin{minipage}[t]{\linewidth}\small#6\end{minipage}}\fi
     }}%
 
-
 % Refine quote
 \newcommand*{\myquote}[2]{%
-   \quote{\itshape #1 \\ \scshape \footnotesize #2}}
+   \quote{\itshape #1 \\ \scshape \scriptsize #2}}
 
 % Hobbies
 \newcommand*{\cvhobby}[2]{\cvline{#1}{\small #2}}
-
 
 % Developer/Contributor footnotes
 \usepackage[bottom,norule,symbol*]{footmisc}
@@ -100,4 +96,3 @@
 
 \newcommand*{\developer}{\footnotemark[1]}
 \newcommand*{\contributor}{\footnotemark[2]}
-
