@@ -52,7 +52,7 @@
 \section{Experience}
 \subsection{NIWC Pacific}
 
-\tlcventry{2021}{0}{Engineering Manager, Autonomy Performance Analysis}{}{}{}{%
+\tlcventry{2024}{2021}{Engineering Manager, Autonomy Performance Analysis}{}{}{}{%
 \begin{itemize}
   \item Lead team of 9 to develop analysis architecture to provide timely
         and actionable results to engineers and management.
@@ -85,7 +85,7 @@
         Met with projects throughout the Division to help them tailor best practices for their workflow.
 \end{itemize}}
 
-\tlcventry{2020}{2013}{Engineering Manager, Autonomous Vehicle Development}{}{}{}{%
+\tlcventry{2020}{2012}{Engineering Manager, Autonomous Vehicle Development}{}{}{}{%
 \begin{itemize}
   \item Vehicles: Assault Amphibious Vehicle, HMMWV, Ford Escape Hybrid, QuadSki
   \item Domains: Off-road, unimproved roads, beaches, surf zone, open ocean, suburban
@@ -97,11 +97,16 @@
         Developed architecture to support running on vehicle, in simulation, and with sensor playback.
   \item Responsible for reviewing and merging proposed changes into baseline software configuration.
         Documented and communicated clear pathway to integrate into and evolve baseline configuration.
+        Developed test methods and metrics to check module and system performance.
   \item Set up automated builds (static analysis, unit tests, regression tests).
         Focused on rapid feedback for faster iterations:
         build and test subsets of modules, configure dependencies for speed, faster-than-real-time simulation.
+  \item Automated builds started at 4-8 hours to complete.
+        With architecture re-factor and utilities to identify changed modules and dependent modules the duration
+        was reduced to 15 minutes to 3 hours.
+        These builds ran on average 3 times per day.
   \item Developed RPM-based PID throttle controller with switching on pitch angle used in surf zone.
-        Contributor to AAV motion model development (trinary steering system) and validation.
+        Contributor to AAV motion model development (trinary steering, dual thrust system) and validation.
   \item Outfitted Ford Escape Hybrid with large number of perception and localization sensors and computing.
   \item Directed implementation of unsupervised learning algorithm for lidar calibration and mesh-based object
         segmentation of lidar data.
@@ -112,13 +117,13 @@
   \item Improved Kalman filter for localization using coordinate ascent machine learning.
   \item Implemented control Lyapunov function-based algorithm for waypoint navigation and showed significant
         improvement over PID controller.
-  \item Added use of CMake macros and functions to Autonomous Capabilities Suite build system to greatly simplify
+  \item Added use of CMake macros and functions to automony software build system to simplify
         addition of new modules to architecture.
 \end{itemize}}
 
 \tlcventry{2009}{2007}{Lead Engineer, UAV-UGV Refueling}{}{}{}{%
 \begin{itemize}
-  \item Developed UAV landing pad for large UGV that centers and refuels UAV and allows UAV to continue operations.
+  \item Developed UAV landing pad for large UGV that centers and refuels UAV to continue operations.
   \item Wrote interface to UAV to control flight via waypoints from OCU\@.
 \end{itemize}}
 
@@ -128,31 +133,30 @@
   \item Created tools to map wireless signal strength and GPS satellite observability.
   \item Rapid prototyping of novel large UGV hardware (marsupial capability, UAV landing/refueling pad, automatic
         gate operation).
-  \item Supported large number of system test events at remote locations throughout U.S.
+  \item Supported large number of system test events at locations throughout U.S.
 \end{itemize}}
 
 %\pagebreak
 
 \subsection{Other Experience}
 
-\tlcventry{2010}{0}{Developer/Maintainer}{}{}{}{%
-  Open Source Projects
+\tlcventry{2024}{2010}{Developer/Maintainer}{Open Source Projects}{}{}{%
 \begin{itemize}
   \item \textit{Statick}: static analysis and linting framework easily customizable for warnings and reports.
         Automated pipelines used for pull requests and releases to PyPI.
   \item \textit{ROS Example Node}: minimal working example of common ROS concepts and best practices.
 \end{itemize}}
 
-\tlcventry{2015}{2011}{Engineering Mentor}{University of California}{San Diego}{}{%
-  Computer Science Department, Prof.\ Ryan Kastner's Lab
+\tlcventry{2015}{2011}{Engineering Mentor}{University of California, San Diego}{}{}{%
+  %Computer Science Department, Prof.\ Ryan Kastner's Lab
 \begin{itemize}%
   \item Mentored student teams with undergraduate and graduate students in areas of visual odometry, SLAM, stereo
         vision, Kinect for skeleton and gesture tracking, Turtlebot navigation, and underwater vehicles.
   \item Provided guest lectures on large ground vehicle autonomy development emphasizing test and evaluation.
 \end{itemize}}
 
-\tlcventry{2011}{2008}{Software Lead}{University of California}{San Diego}{}{%
-  Stingray Underwater Vehicle
+\tlcventry{2011}{2008}{Software Lead, Stingray UUV}{University of California, San Diego}{}{}{%
+  %Stingray Underwater Vehicle
 \begin{itemize}%
   \item Participated in AUVSI UUV student competition.
   \item Developed: custom networking software, computer vision algorithms to perceive underwater obstacle course,
@@ -180,10 +184,10 @@
 
 \tlcventry{2000}{1996}{Bachelor's, Mechanical Engineering}{University of California, San Diego}{}{}{}
 
-\section{Personal interests}
-
-\cvhobby{Sports}{Volleyball, Basketball, Hiking, Swimming, Paddle Boarding}
-\cvhobby{Volunteer}{Mentor in Big Brothers, Big Sisters from 2005 --- 2009}
-\cvhobby{Others}{Traveling, Reading, Gardening}
+% \section{Personal interests}
+%
+% \cvhobby{Sports}{Volleyball, Basketball, Hiking, Swimming, Paddle Boarding}
+% \cvhobby{Volunteer}{Mentor in Big Brothers, Big Sisters from 2005 --- 2009}
+% \cvhobby{Others}{Traveling, Reading, Gardening}
 
 \end{document}
